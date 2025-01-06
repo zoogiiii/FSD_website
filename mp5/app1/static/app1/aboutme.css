@@ -1,0 +1,144 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #2c3e50;
+    background: #f7f9fc;
+    overflow-x: hidden;
+  }
+  
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0F3D3E;
+  color: #FAEBD7;
+  padding: 0.2rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-size: 0.8rem;
+}
+
+header nav a {
+  color: #FAEBD7;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+header nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ffeaa7;
+  left: 50%;
+  bottom: -5px;
+  transition: all 0.3s ease;
+}
+
+header nav a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+header nav a:hover {
+  color: #ffeaa7;
+}
+
+  
+ /* About Section */
+ #about {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-top: 5px solid #0F3D3E;
+}
+
+#about h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: #0F3D3E;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#about h2::after {
+  content: '';
+  width: 50px;
+  height: 3px;
+  background: #0F3D3E;
+  display: block;
+  margin: 0.5rem auto;
+}
+
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #4a4a4a;
+  max-width: 700px;
+  margin: auto;
+}
+
+#about ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+#about ul li {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin: 0.8rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+#about ul li::before {
+  color: #1c92d2;
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+}
+
+#about ul li strong {
+  color: #1c92d2;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 0.75rem;
+  background: #0F3D3E;
+  color: #FAEBD7;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+footer a {
+  color: #FAEBD7;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: #FAEBD7;
+}
+  

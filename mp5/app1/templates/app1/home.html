@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granite & Marble Collection</title>
+    <link rel="stylesheet" href="static/app1/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Deeksha Granio Impex</h1>
+        </div>
+        <nav>
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'about' %}">About Us</a>
+            <a href="#products">Products</a>
+            <a href="{% url 'contact' %}">Contact</a>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Discover India's Finest Granite and Marble</h2>
+        <p>Crafting elegance and durability for your spaces.</p>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="filter-sort">
+            <label for="filter">Filter by:</label>
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="granite">Granite</option>
+                <option value="marble">Marble</option>
+            </select>
+
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="popularity">Popularity</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+            </select>
+        </div>
+        
+
+        <div class="product-list">
+            <!-- Granite Products -->
+            <div class="product granite">
+                <img src="{% static 'app1/images/whiteparadiso.jpeg' %}" alt="White Paradiso">
+                <h3>White Paradiso</h3>
+                <p>₹75 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/royalblue.jpeg' %}" alt="Royal blue">
+                <h3>Royal blue</h3>
+                <p>₹85 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/silverblacklapotra.jpeg' %}" alt="Silver Black lapotra">
+                <h3>Silver Black lapotra</h3>
+                <p>₹150 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/silverblack.jpeg' %}" alt="Silver Black">
+                <h3>Silver Black</h3>
+                <p>₹120 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/pinkparadise.jpeg' %}" alt="Pink Paradise">
+                <h3>Pink Paradise</h3>
+                <p>₹80 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/tenbrownlapotara.jpeg' %}" alt="Ten brown lapotara">
+                <h3>Ten brown lapotara</h3>
+                <p>₹85 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/teakbrown.jpeg' %}" alt="Teak brown">
+                <h3>Teak brown</h3>
+                <p>₹90 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/brownlapotra.jpeg' %}" alt="Brown lapotara">
+                <h3>Brown lapotara</h3>
+                <p>₹85 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/sadarlliwhite.jpeg' %}" alt="Sadarlli white">
+                <h3>Sadarlli white</h3>
+                <p>₹85 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/darkjubrana.jpeg' %}" alt="Dark jubrana">
+                <h3>Dark jubrana</h3>
+                <p>₹85 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/cophybrown.jpeg' %}" alt="Cophy brown">
+                <h3>Cophy brown</h3>
+                <p>₹85 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/carpetblack.jpeg' %}" alt="Carpet black">
+                <h3>Carpet black</h3>
+                <p>₹115 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/fishbrown.jpeg' %}" alt="Fish brown">
+                <h3>Fish brown</h3>
+                <p>₹120 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/kuppamwhite.jpeg' %}" alt="Kuppam white">
+                <h3>Kuppam white</h3>
+                <p>₹115 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/fishblack.jpeg' %}" alt="Fish black">
+                <h3>Fish black</h3>
+                <p>₹120 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/sadaranwhite.jpeg' %}" alt="Sadaran white">
+                <h3>Sadaran white</h3>
+                <p>₹150 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/forestblack.jpeg' %}" alt="Forest black">
+                <h3>Forest black</h3>
+                <p>₹120 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/blackpearl.jpeg' %}" alt="Black pearl">
+                <h3>Black pearl</h3>
+                <p>₹95 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/rolexbrown.jpeg' %}" alt="Rolex brown">
+                <h3>Rolex brown</h3>
+                <p>₹95 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/multicolour.jpeg' %}" alt="Multi colour">
+                <h3>Multi colour</h3>
+                <p>₹95 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/erawhite.jpeg' %}" alt="Era white">
+                <h3>Era white</h3>
+                <p>₹170 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/hanyblue.jpeg' %}" alt="Hany blue">
+                <h3>Hany blue</h3>
+                <p>₹80 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/forestbrown.jpeg' %}" alt="Forest brown">
+                <h3>Forest brown</h3>
+                <p>₹110 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/kotaralapotara.jpeg' %}" alt="Kotara lapotara">
+                <h3>Kotara lapotara</h3>
+                <p>₹105 per sq.ft</p>
+            </div>
+            <div class="product granite">
+                <img src="{% static 'app1/images/kotarapolish.jpeg' %}" alt="Kotara polish">
+                <h3>Kotara polish</h3>
+                <p>₹85 per sq.ft</p>
+            </div>
+
+            <!-- Marble Products -->
+            <div class="product marble">
+                <img src="{% static 'app1/images/rajnagar.jpg' %}" alt="Rajnagar Marble">
+                <h3>Rajnagar Marble</h3>
+                <p>₹250 per sq.ft</p>
+            </div>
+            <div class="product marble">
+                <img src="{% static 'app1/images/katni.jpg' %}" alt="Katni Marble">
+                <h3>Katni Marble</h3>
+                <p>₹300 per sq.ft</p>
+            </div>
+            <div class="product marble">
+                <img src="{% static 'app1/images/makrana.jpg' %}" alt="Makrana White">
+                <h3>Makrana White</h3>
+                <p>₹1500 per sq.ft</p>
+            </div>
+            <div class="product marble">
+                <img src="{% static 'app1/images/indianstatuario.jpg' %}" alt="Indian Statuario">
+                <h3>Indian Statuario</h3>
+                <p>₹2000 per sq.ft</p>
+            </div>
+            <div class="product marble">
+                <img src="{% static 'app1/images/rainforest.jpg' %}" alt="Rainforest Brown">
+                <h3>Rainforest Brown</h3>
+                <p>₹500 per sq.ft</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Deeksha Granio Impex | All Rights Reserved</p>
+    </footer>
+
+
+    <script>
+      
+      function filterProducts() {
+          let filterValue = document.getElementById('filter').value; 
+          let products = document.querySelectorAll('.product'); 
+
+          
+          products.forEach(function (product) {
+              if (filterValue === 'all') {
+                  product.style.display = 'block'; 
+              } else if (product.classList.contains(filterValue)) {
+                  product.style.display = 'block'; 
+              } else {
+                  product.style.display = 'none'; 
+              }
+          });
+      }
+
+      
+      function sortProducts() {
+          let sortValue = document.getElementById('sort').value; 
+          let products = Array.from(document.querySelectorAll('.product')); 
+
+          
+          if (sortValue === 'price-low') {
+              products.sort((a, b) => {
+                  let priceA = parseInt(a.querySelector('p').textContent.replace('₹', '').replace(' per sq.ft', ''));
+                  let priceB = parseInt(b.querySelector('p').textContent.replace('₹', '').replace(' per sq.ft', ''));
+                  return priceA - priceB; 
+              });
+          } else if (sortValue === 'price-high') {
+              products.sort((a, b) => {
+                  let priceA = parseInt(a.querySelector('p').textContent.replace('₹', '').replace(' per sq.ft', ''));
+                  let priceB = parseInt(b.querySelector('p').textContent.replace('₹', '').replace(' per sq.ft', ''));
+                  return priceB - priceA; 
+              });
+          } else if (sortValue === 'popularity') {
+              products.sort((a, b) => a.textContent.localeCompare(b.textContent));
+          }
+
+          
+          let productList = document.querySelector('.product-list');
+          products.forEach(product => {
+              productList.appendChild(product); 
+          });
+      }
+
+      
+      document.getElementById('filter').addEventListener('change', function () {
+          filterProducts();
+          sortProducts(); 
+      });
+
+      document.getElementById('sort').addEventListener('change', function () {
+          sortProducts();
+      });
+
+      
+      window.onload = function () {
+          filterProducts();
+          sortProducts();
+      };
+  </script>
+</body>
+</html>
